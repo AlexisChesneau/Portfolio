@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    background-color: #00ffff;
+    height: 20vh;
+
+}
+
+.photo img {
+    border-radius: 100%;
+    height: 70%;
+    width: auto;
+}
+
+.photo {
+    width: 30vw;
+    flex-direction: column;
+}
+
+.flexcenter {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    height: 30%;
+    font-size: 2em;
+    background-color: brown;
+}
+
+.nav {
+    display: flex;
+    background-color: blue;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.lien {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50px;
+    width: 10%;
+    text-align: center;
+    color: white;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.lien:hover {
+    background-color: rgb(93, 33, 150);
+}
+
+.lk {
+    background-color: blueviolet;
+}
+
+.cv {
+    margin: 0 25%;
+    background-color: blueviolet;
+}
+
+.lm {
+    background-color: blueviolet;
+}
+
+
+main {
+    display: flex;
+    height: 75vh;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+h2 {
+    background-color: yellow;
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.propos {
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.projet {
+    margin-left: 60%;
+}
+
+.paragraphe1 {
+    height: 40%;
+    background-color: green;
+    width: 30%;
+    margin-left: 10%;
+}
+
+.paragraphe2 {
+    display: flex;
+    justify-items: flex-end;
+    height: 40%;
+    background-color: green;
+    width: 30%;
+    margin-left: 60%;
+    margin-bottom: 20px;
+}
+
+.paragraphe {
+    font-size: 20px;
+    padding: 20px;
+}
+
+footer {
+    height: 5vh;
+    display: flex;
+    background-color: chocolate;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.mail {
+    color: white;
+}
+
+
+
