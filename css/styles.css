@@ -3,10 +3,14 @@
     padding: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
 header {
     display: flex;
     background-color: rgba(0, 0, 255, 0.603);
     height: 25vh;
+    box-shadow: 10px 5px 5px gray;
 }
 
 .photo img {
@@ -30,6 +34,7 @@ h1 {
     height: 15%;
     font-size: 2em;
     margin-bottom: 50px;
+    color: white;
 }
 
 .nav {
@@ -37,6 +42,7 @@ h1 {
     width: 70vw;
     justify-content: center;
     align-items: center;
+    font-family: 'Nunito', sans-serif;
 }
 
 .lien {
@@ -84,10 +90,11 @@ h2 {
     text-align: center;
     padding: 10px;
     border-radius: 50px;
+    box-shadow: 2px 5px 5px rgba(128, 128, 128, 0.432);
 }
 
 .propos {
-    margin-left: 10%;
+    margin-left: 12%;
     margin-top: 20px;
 }
 
@@ -98,7 +105,7 @@ h2 {
 .paragraphe1 {
     height: 40%;
     width: 30%;
-    margin-left: 10%;
+    margin-left: 12%;
 }
 
 .paragraphe2 {
@@ -113,6 +120,8 @@ h2 {
 .paragraphe {
     font-size: 20px;
     padding: 20px;
+    font-family: 'Oxygen', sans-serif;
+    line-height: 1.5;
 }
 
 footer {
@@ -121,6 +130,7 @@ footer {
     background-color: rgba(0, 0, 255, 0.603);
     align-items: center;
     justify-content: space-around;
+    box-shadow: 4px 0px 15px 1px;
 }
 
 
