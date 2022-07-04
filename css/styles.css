@@ -64,15 +64,18 @@ a {
 
 .lk {
     background-color: rgb(255, 255, 255);
+    transition: 1s;
 }
 
 .cv {
     margin: 0 10vw;
     background-color: rgb(255, 255, 255);
+    transition: 1s;
 }
 
 .lm {
     background-color: rgb(255, 255, 255);
+    transition: 1s;
 }
 
 
@@ -96,10 +99,12 @@ h2 {
 .propos {
     margin-left: 12%;
     margin-top: 20px;
+    transition: 1s;
 }
 
 .projet {
     margin-left: 60%;
+    transition: 1s;
 }
 
 .paragraphe1 {
