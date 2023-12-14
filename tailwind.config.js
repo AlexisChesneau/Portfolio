@@ -10,8 +10,8 @@ module.exports = {
       },
 
       fontFamily: {
-        sans: ["Lato", "sans-serif"],
-        header: ["Calibri", "sans-serif"],
+        sans: ["Quicksand", "sans-serif"],
+        header: ["Rugen", "sans-serif"],
       },
 
       fontSize: {

@@ -2,15 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: theme("colors.primaryLight");
-    font-family: theme("fontFamily.header");
-  }
+@font-face {
+  font-family: "Quicksand";
+  font-weight: 400;
+  src: local("Quicksand-Regular"),
+    url("../public/font/Quicksand-Regular.ttf") format("opentype");
+}
 
-nav {
-  background: rgba(0,0,0,.6);
-  border-bottom: 1px solid #ffffff4d;
+@font-face {
+  font-family: "Rugen";
+  src: local("Rugen"), url("../public/font/Rugen.otf") format("opentype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: theme("colors.primaryLight");
+  font-family: theme("fontFamily.sans");
+}
+
+h1,
+h2 {
+  font-family: theme("fontFamily.header");
 }

@@ -1,25 +1,30 @@
-function Profil() {
-    return (
-      <section id="profil" className="h-[100vh] px-96 sm:px-0">
-        <div className="h-full leading-10 flex justify-around items-center sm:justify-evenly">
-          <div className="h-[300px] flex flex-col justify-around">
-            <h1 className="leading-10">Alexis Chesneau</h1>
-            <p className="text-lg">
-              Bienvenue sur mon portfolio ! <br />
-              Je suis Alexis Chesneau, et ce portfolio est un espace dédié à mes
-              projets.
-              <br /> Vous y trouverez une sélection de mes créations les plus
-              récentes.
-            </p>
-          </div>
-            <p>img</p>
+import CustomButton from "./CustomButton";
+
+export default function Profil() {
+  return (
+    <section>
+      <div className="w-full h-[1px] bg-white absolute top-[41%] opacity-60"></div>
+      <div className="w-[1px] h-[51.4rem] bg-white absolute left-[62%] opacity-60"></div>
+      <header className="flex items-center justify-between pt-12 px-24">
+        <h3 className="text-5xl">PortFolio</h3>
+        <CustomButton string={"Contact"} width={"w-[165px]"} />
+      </header>
+      <div className="leading-10 flex justify-center">
+        <div className="h-[700px] flex flex-col items-start justify-evenly pb-16">
+          <h1 className="text-8xl">CHESNEAU</h1>
+          <h3 className="leading-10 text-8xl pb-16">ALEXIS</h3>
+          <p className="text-[22px]">
+            Hello, I'm Alexis Chesneau, a passionate web <br /> developer
+            dedicated to transforming ideas into <br /> dynamic digital
+            experiences. With a keen eye for <br /> design and expertise in
+            coding, I craft websites <br /> that leave a lasting impression
+          </p>
+          <CustomButton string={"Contact"} width={"w-[165px]"} />
         </div>
-        <div className="flex absolute top-24 left-[-2.80]">
-        <img className="w-[9.5rem] h-auto max-w-full" src="/images/vector_top.svg" alt="" />
+        <div className="flex h-[700px] items-end">
+          <div className="h-[541px] w-[634px] bg-gradient-to-br from-[#330927] from-10% via-[#3FD0BF] via-55% to-[#7E7524] to-90% opacity-90 z-10"></div>
         </div>
-      </section>
-    );
-  }
-  
-  export default Profil;
-  
+      </div>
+    </section>
+  );
+}
