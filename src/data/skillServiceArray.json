@@ -1,0 +1,23 @@
+[
+  {
+    "src": "images/serviceweb/desktop.svg",
+    "alt": "JavaScript",
+    "title": "Web Development Services",
+    "description": "Creating visually appealing and user-friendly designs for optimal user engagement.",
+    "tag": ["UI/UX Design"]
+  },
+  {
+    "src": "images/serviceweb/brackets.svg",
+    "alt": "JavaScript",
+    "title": "Wordpress Development",
+    "description": "Designing and developing interactive applications accessible through web browsers.",
+    "tag": ["Optimization", "Funtionality"]
+  },
+  {
+    "src": "images/serviceweb/rocket.svg",
+    "alt": "JavaScript",
+    "title": "Promotion",
+    "description": "Integrating social media features to boost online presence and engagement.",
+    "tag": ["UI/UX Design"]
+  }
+]

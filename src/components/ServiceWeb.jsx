@@ -1,33 +1,7 @@
 import CustomButton from "./CustomButton";
+import skillServiceArray from "../data/skillServiceArray.json";
 
 function ServiceWeb() {
-  const skillServiceArray = [
-    {
-      src: "images/serviceweb/desktop.svg",
-      alt: "JavaScript",
-      title: "Web Development Services",
-      description:
-        "Creating visually appealing and user-friendly designs for optimal user engagement.",
-      tag: ["UI/UX Design"],
-    },
-    {
-      src: "images/serviceweb/brackets.svg",
-      alt: "JavaScript",
-      title: "Wordpress Development",
-      description:
-        "Designing and developing interactive applications accessible through web browsers.",
-      tag: ["Optimization", "Funtionality"],
-    },
-    {
-      src: "images/serviceweb/rocket.svg",
-      alt: "JavaScript",
-      title: "Promotion",
-      description:
-        "Integrating social media features to boost online presence and engagement.",
-      tag: ["UI/UX Design"],
-    },
-  ];
-
   return (
     <section className="mt-32">
       <div className="flex flex-col text-center">
@@ -67,9 +41,9 @@ function ServiceWeb() {
               {eachService.tag.map((eachTag, tagidx) => (
                 <div
                   key={`${skillidx}-tag-${tagidx}`}
-                  className="flex border-[1px] rounded-full w-40 py-1 justify-center"
+                  className="flex border-[1px] rounded-full w-32 py-1 justify-center mr-2"
                 >
-                  <p className="">{eachTag}</p>
+                  <p className="text-sm">{eachTag}</p>
                 </div>
               ))}
             </div>
@@ -77,7 +51,11 @@ function ServiceWeb() {
         ))}
       </div>
       <div className="flex justify-center">
-        <CustomButton string={"Explore My Work"} width={"w-[200px]"} />
+        <CustomButton
+          string={"Explore My Work"}
+          width={"w-[200px]"}
+          widthDiv={"w-[202px]"}
+        />
       </div>
     </section>
   );

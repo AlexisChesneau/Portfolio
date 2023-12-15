@@ -1,19 +1,6 @@
-export default function Footer() {
-  const reseaux = [
-    {
-      src: "images/reseau/facebook.svg",
-      alt: "facebook",
-    },
-    {
-      src: "images/reseau/instagram.svg",
-      alt: "instagram.",
-    },
-    {
-      src: "images/reseau/twitter.svg",
-      alt: "twitter",
-    },
-  ];
+import reseaux from "../data/reseaux.json";
 
+export default function Footer() {
   return (
     <footer className="mt-32">
       <div className="flex flex-col items-center">
@@ -27,14 +14,22 @@ export default function Footer() {
       </div>
       <div className="h-[1px] w-full bg-white mt-[8rem]"></div>
       <div className="flex items-center">
-        <div className="h-[8.5rem] flex items-center">
-          <p>© 2023 Alexis Chesneau. All rights reserved</p>
-        </div>
-        {reseaux.map((reseau, idx) => (
-          <div key={idx}>
-            <img src={reseau.src} alt={reseau.alt} />
+        <div className="h-[8.5rem] w-full flex items-center justify-between px-24">
+          <div>
+            <p>© 2023 Alexis Chesneau. All rights reserved</p>
           </div>
-        ))}
+          <div className="flex gap-14">
+            {reseaux.map((reseau, idx) => (
+              <div key={idx}>
+                <img
+                  className="border-2 p-2 rounded-full"
+                  src={reseau.src}
+                  alt={reseau.alt}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </footer>
   );

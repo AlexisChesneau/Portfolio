@@ -1,33 +1,7 @@
 import CustomButton from "./CustomButton";
+import myProjects from "../data/myProjects.json";
 
 export default function Projet() {
-  const myProjects = [
-    {
-      src: "images/projet/project1.png",
-      alt: "images project 1",
-      title: "E-Commerce Bliss",
-      description:
-        "Crafted a dynamic e-commerce platform for seamless online shopping, enhancing user experience with intuitive design and secure transactions.",
-      date: "March 2022 - June 2022",
-    },
-    {
-      src: "images/projet/project2.png",
-      alt: "images project 2",
-      title: "SocialHub Connect",
-      description:
-        "Developed a social media integration platform, empowering clients to enhance online presence through unified social engagement tools.",
-      date: "September 2021 - December 2021",
-    },
-    {
-      src: "images/projet/project3.png",
-      alt: "images project 3",
-      title: "Responsive Portfolio Revamp",
-      description:
-        "Transformed a personal portfolio website into a mobile-responsive showcase, optimizing user engagement and visual appeal.",
-      date: "January 2023 - March 2023",
-    },
-  ];
-
   return (
     <section className="flex flex-col items-center mt-32">
       <h3 className="text-3xl font-extrabold">Projets</h3>
@@ -55,9 +29,11 @@ export default function Projet() {
           />
         </div>
       ))}
-      <CustomButton string={"View All Projects"} width={"w-[13.5rem]"} />
+      <CustomButton
+        string={"View All Projects"}
+        width={"w-[216px]"}
+        widthDiv={"w-[218px]"}
+      />
     </section>
   );
 }
-
-//
