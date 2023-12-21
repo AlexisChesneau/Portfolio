@@ -21,7 +21,7 @@ export default function Projet() {
             <p className="pt-32">{project.date}</p>
           </div>
           <img
-            className={`w-[40rem] h-[30rem] rounded-3xl ${
+            className={`h-[100%] rounded-3xl ${
               idx % 2 === 1 ? "mr-20" : "ml-20"
             }`}
             src={project.src}

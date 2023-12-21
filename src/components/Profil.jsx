@@ -3,7 +3,7 @@ import CustomButton from "./CustomButton";
 export default function Profil() {
   return (
     <section>
-      <div className="w-full h-[1px] bg-white absolute top-[41%] opacity-60"></div>
+      <div className="w-full h-[1px] bg-white absolute top-[30%] opacity-60 max-[1920px]:top-[41%]"></div>
       <div className="w-[1px] h-[51.4rem] bg-white absolute left-[62%] opacity-60"></div>
       <header className="flex items-center justify-between pt-12 px-24">
         <h3 className="text-5xl">PortFolio</h3>
