@@ -9,7 +9,7 @@ export default function CustomButton({ string, widthDiv, width }) {
     <div className="flex justify-end">
       <div
         className={`${
-          isClicked ? "" : "h-[72px]"
+          isClicked ? "mt-[7px]" : "h-[72px]"
         } ${widthDiv} rounded-full bg-gradient-to-br from-[#331D09] from-10% via-[#3FD0BF] via-55% to-[#7E7524] to-90%`}
       >
         <button
