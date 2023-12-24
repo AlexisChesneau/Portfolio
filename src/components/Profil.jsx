@@ -4,29 +4,24 @@ import CircleShadow from "./CircleShadow";
 export default function Profil() {
   return (
     <section className="relative">
-      <div className="w-full h-[1px] bg-white absolute top-[47%] opacity-60 max-[1920px]:top-[47%]"></div>
-      <div className="w-[1px] h-[51.4rem] bg-white absolute left-[58%] max-[1920px]:left-[58%] opacity-60"></div>
+      <div className="w-full h-[1px] bg-white absolute top-[44%] opacity-60 max-[1920px]:top-[44%]"></div>
+      <div className="w-[1px] h-[48.8rem] bg-white absolute left-[58%] max-[1920px]:left-[58%] opacity-60"></div>
       <CircleShadow
+        xl={"max-[1280px]:top-[-20%] max-[1280px]:left-[-35%]"} // 1280px
         fhd={"max-[1920px]:top-[-20%] max-[1920px]:left-[-20%]"} // 1920px
         qhd={"top-[-20%] left-[-5%]"} // 2560px
       />
       <CircleShadow
+        xl={"max-[1280px]:top-[0%] max-[1280px]:left-[20%]"} // 1280px
         fhd={"max-[1920px]:top-[-2%] max-[1920px]:left-[36%]"}
         qhd={"top-[-5%] left-[37%]"}
       />
       <CircleShadow
+        xl={"max-[1280px]:top-[-60%]  max-[1280px]:left-[35%]"} // 1280px
         fhd={"max-[1920px]:top-[-70%] max-[1920px]:left-[47%]"}
         qhd={"top-[-80%] left-[48%]"}
       />
-      <header className="flex items-center justify-around pt-12 gap-[34.375rem]">
-        <h3 className="text-5xl">PortFolio</h3>
-        <CustomButton
-          string={"Contact"}
-          width={"w-[165px]"}
-          widthDiv={"w-[167px]"}
-        />
-      </header>
-      <div className="leading-10 flex justify-center">
+      <div className="leading-10 flex justify-center pt-[80px]">
         <div className="h-[700px] flex flex-col items-start justify-evenly pb-16">
           <h1 className="text-8xl max-[1536px]:text-7xl max-[1280px]:text-6xl">
             CHESNEAU

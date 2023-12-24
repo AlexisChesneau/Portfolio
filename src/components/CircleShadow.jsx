@@ -1,10 +1,10 @@
-export default function CircleShadow({ qhd, fhd, height, width }) {
+export default function CircleShadow({ qhd, fhd, xl, lg, md, sm }) {
   return (
     <>
       <img
         src="images/shadow/circleShadow.svg"
         alt="circleShadow"
-        className={` ${qhd} ${fhd} absolute z-0`}
+        className={` ${qhd} ${fhd} ${xl} ${lg} ${md} ${sm} absolute z-0`}
       />
     </>
   );

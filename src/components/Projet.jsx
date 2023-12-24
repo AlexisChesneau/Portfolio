@@ -40,10 +40,12 @@ export default function Projet() {
             idx % 2 === 1 ? "flex-row-reverse" : ""
           }`}
         >
-          <div className="flex flex-col justify-end">
+          <div className="flex flex-col justify-center">
             <h3 className="text-3xl font-extrabold">{project.title}</h3>
-            <p className="text-lg leading-9 py-4">{project.description}</p>
-            <p className="pt-32">{project.date}</p>
+            <p className="text-lg leading-9 py-10">{project.description}</p>
+            <p className="border-[1px] rounded-full mr-auto px-4 py-1">
+              {project.date}
+            </p>
           </div>
           <img
             className={`h-[100%] rounded-3xl ${

@@ -56,7 +56,7 @@ function ServiceWeb() {
               {eachService.tag.map((eachTag, tagidx) => (
                 <div
                   key={`${skillidx}-tag-${tagidx}`}
-                  className="flex border-[1px] rounded-full w-32 py-1 justify-center mr-2"
+                  className="flex border-[1px] rounded-full py-1 px-4 justify-center mr-2"
                 >
                   <p className="text-sm">{eachTag}</p>
                 </div>
