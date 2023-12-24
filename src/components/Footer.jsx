@@ -2,10 +2,10 @@ import reseaux from "../data/reseaux.json";
 
 export default function Footer() {
   return (
-    <footer className="mt-32">
+    <footer className="mt-32 relative">
       <div className="flex flex-col items-center">
-        <h2 className="text-5xl text-center">
-          Interested in work <br /> together
+        <h2 className="text-5xl text-center w-[55rem]">
+          Interested in work together
         </h2>
         <p className="py-10">Drop an Email</p>
         <p className="border-2 py-4 px-16 rounded-full">
@@ -22,7 +22,7 @@ export default function Footer() {
             {reseaux.map((reseau, idx) => (
               <div key={idx}>
                 <img
-                  className="border-2 p-2 rounded-full"
+                  className="border-2 p-2 rounded-full w-[50px] h-[50px]"
                   src={reseau.src}
                   alt={reseau.alt}
                 />

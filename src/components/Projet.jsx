@@ -1,12 +1,37 @@
 import CustomButton from "./CustomButton";
+import CircleShadow from "./CircleShadow";
 import myProjects from "../data/myProjects.json";
 
 export default function Projet() {
   return (
-    <section className="flex flex-col items-center mt-32">
+    <section className="flex flex-col items-center mt-32 relative">
+      <CircleShadow
+        fhd={"max-[1920px]:top-[-10%] max-[1920px]:left-[-23%]"} // 1920px
+        qhd={"top-[-10%] left-[-15%]"} // 2560px
+      />
+      <CircleShadow
+        fhd={"max-[1920px]:top-[-10%] max-[1920px]:left-[70%]"} // 1920px
+        qhd={"top-[-10%] left-[70%]"} // 2560px
+      />
+      <CircleShadow
+        fhd={"max-[1920px]:top-[17%] max-[1920px]:left-[70%]"} // 1920px
+        qhd={"top-[17%] left-[70%]"} // 2560px
+      />
+      <CircleShadow
+        fhd={"max-[1920px]:top-[72%] max-[1920px]:left-[70%]"} // 1920px
+        qhd={"top-[72%] left-[70%]"} // 2560px
+      />
+      <CircleShadow
+        fhd={"max-[1920px]:top-[33%] max-[1920px]:left-[-20%]"} // 1920px
+        qhd={"top-[33%] left-[-7%]"} // 2560px
+      />
+      <CircleShadow
+        fhd={"max-[1920px]:top-[80%] max-[1920px]:left-[-25%]"} // 1920px
+        qhd={"top-[80%] left-[-25%]"} // 2560px
+      />
       <h3 className="text-3xl font-extrabold">Projets</h3>
-      <h2 className="text-5xl text-center py-6">
-        Transforming visions <br /> into digital excellence
+      <h2 className="text-5xl text-center py-6 w-[60rem]">
+        Transforming visions into digital excellence
       </h2>
       {myProjects.map((project, idx) => (
         <div

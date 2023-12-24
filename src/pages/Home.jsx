@@ -7,7 +7,7 @@ import Reviews from "../components/Reviews";
 
 export default function Home() {
   return (
-    <section className="bg-primaryDark z-[-2]">
+    <section className="bg-primaryDark z-[-2] overflow-x-hidden">
       <Profil />
       <Skillbar />
       <ServiceWeb />

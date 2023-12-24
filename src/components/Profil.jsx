@@ -1,11 +1,24 @@
 import CustomButton from "./CustomButton";
+import CircleShadow from "./CircleShadow";
 
 export default function Profil() {
   return (
-    <section>
-      <div className="w-full h-[1px] bg-white absolute top-[30%] opacity-60 max-[1920px]:top-[41%]"></div>
-      <div className="w-[1px] h-[51.4rem] bg-white absolute left-[62%] opacity-60"></div>
-      <header className="flex items-center justify-between pt-12 px-24">
+    <section className="relative">
+      <div className="w-full h-[1px] bg-white absolute top-[47%] opacity-60 max-[1920px]:top-[47%]"></div>
+      <div className="w-[1px] h-[51.4rem] bg-white absolute left-[58%] max-[1920px]:left-[58%] opacity-60"></div>
+      <CircleShadow
+        fhd={"max-[1920px]:top-[-20%] max-[1920px]:left-[-20%]"} // 1920px
+        qhd={"top-[-20%] left-[-5%]"} // 2560px
+      />
+      <CircleShadow
+        fhd={"max-[1920px]:top-[-2%] max-[1920px]:left-[36%]"}
+        qhd={"top-[-5%] left-[37%]"}
+      />
+      <CircleShadow
+        fhd={"max-[1920px]:top-[-70%] max-[1920px]:left-[47%]"}
+        qhd={"top-[-80%] left-[48%]"}
+      />
+      <header className="flex items-center justify-around pt-12 gap-[34.375rem]">
         <h3 className="text-5xl">PortFolio</h3>
         <CustomButton
           string={"Contact"}
@@ -15,13 +28,17 @@ export default function Profil() {
       </header>
       <div className="leading-10 flex justify-center">
         <div className="h-[700px] flex flex-col items-start justify-evenly pb-16">
-          <h1 className="text-8xl">CHESNEAU</h1>
-          <h3 className="leading-10 text-8xl pb-16">ALEXIS</h3>
-          <p className="text-[22px]">
-            Hello, I'm Alexis Chesneau, a passionate web <br /> developer
-            dedicated to transforming ideas into <br /> dynamic digital
-            experiences. With a keen eye for <br /> design and expertise in
-            coding, I craft websites <br /> that leave a lasting impression
+          <h1 className="text-8xl max-[1536px]:text-7xl max-[1280px]:text-6xl">
+            CHESNEAU
+          </h1>
+          <h3 className="leading-10 text-8xl pb-16 max-[1536px]:text-7xl max-[1280px]:text-6xl">
+            ALEXIS
+          </h3>
+          <p className="text-[22px] w-[31.25rem] max-[1280px]:text-[18px]">
+            Hello, I'm Alexis Chesneau, a passionate web developer dedicated to
+            transforming ideas into dynamic digital experiences. With a keen eye
+            for design and expertise in coding, I craft websites that leave a
+            lasting impression
           </p>
           <CustomButton
             string={"Contact"}
@@ -30,7 +47,7 @@ export default function Profil() {
           />
         </div>
         <div className="flex h-[700px] items-end">
-          <div className="h-[541px] w-[634px] bg-gradient-to-br from-[#330927] from-10% via-[#3FD0BF] via-55% to-[#7E7524] to-90% opacity-90 z-10"></div>
+          <div className="h-[541px] w-[634px] bg-gradient-to-br from-[#330927] from-10% via-[#3FD0BF] via-55% to-[#7E7524] to-90% opacity-90 z-10 max-[1280px]:h-[480px] max-[1280px]:w-[540px]"></div>
         </div>
       </div>
     </section>

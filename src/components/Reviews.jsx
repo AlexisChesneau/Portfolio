@@ -1,15 +1,15 @@
 export default function Reviews() {
   return (
-    <section className="mt-32">
+    <section className="mt-32 relative">
       <div className="flex flex-col items-center">
         <h3 className="text-3xl font-extrabold">Testimonial</h3>
-        <h2 className="text-5xl text-center py-6">
-          Client raves and <br /> reviews
+        <h2 className="text-5xl text-center py-6 w-[45rem]">
+          Client raves and reviews
         </h2>
-        <p className="text-lg leading-9 text-center">
+        <p className="text-lg leading-9 text-center w-[50rem]">
           Discover what our clients are saying about our exceptional web
-          development services. <br /> Read testimonials that speak to our
-          commitment and expertise.
+          development services. Read testimonials that speak to our commitment
+          and expertise.
         </p>
         <div className="w-[81.25rem] h-[22.2rem] flex flex-col justify-between items-center bg-white bg-opacity-[4%] rounded-3xl my-[5rem] p-[2.8rem]">
           <div className="h-[6rem] w-[6rem] bg-[#3FD0BF] flex justify-center rounded-full">

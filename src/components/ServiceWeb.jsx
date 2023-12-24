@@ -1,21 +1,36 @@
 import CustomButton from "./CustomButton";
+import CircleShadow from "./CircleShadow";
 import skillServiceArray from "../data/skillServiceArray.json";
 
 function ServiceWeb() {
   return (
-    <section className="mt-32">
-      <div className="flex flex-col text-center">
+    <section className="mt-32 relative">
+      <CircleShadow
+        fhd={"max-[1920px]:top-[-20%] max-[1920px]:left-[-15%]"} // 1920px
+        qhd={"top-[-20%] left-[-15%]"} // 2560px
+      />
+      <CircleShadow
+        fhd={"max-[1920px]:top-[-50%] max-[1920px]:left-[65%]"} // 1920px
+        qhd={"top-[-50%] left-[75%]"} // 2560px
+      />
+      <CircleShadow
+        fhd={"max-[1920px]:top-[50%] max-[1920px]:left-[1%]"} // 1920px
+        qhd={"top-[50%] left-[5%]"} // 2560px
+      />
+      <CircleShadow
+        fhd={"max-[1920px]:top-[50%] max-[1920px]:left-[50%]"} // 1920px
+        qhd={"top-[45%] left-[55%]"} // 2560px
+      />
+      <div className="flex flex-col text-center items-center">
         <h3 className="leading-10 text-3xl font-extrabold">
           Web Development Services
         </h3>
-        <h1 className="text-5xl py-6">
-          TRANSFORME VISIONS
-          <br />
-          INTO DIGITAL EXCELLENCE
+        <h1 className="text-5xl py-6 w-[60rem]">
+          TRANSFORME VISIONS INTO DIGITAL EXCELLENCE
         </h1>
-        <p className="text-lg leading-9">
+        <p className="text-lg leading-9 w-[54rem]">
           We specialize in creating seamless, visually stunning websites
-          tailored to your unique vision <br /> and goals.
+          tailored to your unique vision and goals.
         </p>
       </div>
       <div className="flex gap-[2%] justify-center py-8">
