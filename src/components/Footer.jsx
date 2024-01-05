@@ -8,7 +8,7 @@ export default function Footer() {
           Interested in work together
         </h2>
         <p className="py-10">Drop an Email</p>
-        <p className="border-2 py-4 px-16 rounded-full">
+        <p className="border-2 py-4 px-16 rounded-full max-[720px]:px-8">
           alexischesneau64@gmail.com
         </p>
       </div>
