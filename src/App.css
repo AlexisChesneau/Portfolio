@@ -34,3 +34,155 @@ h2 {
     0px 0px 60px 3px rgba(126, 117, 36, 0.5),
     0px 0px 80px 3px rgba(51, 9, 39, 0.5);
 }
+
+.lgHidden {
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}
+
+@media (max-width: 1536px) {
+  /* Profil */
+  .lastNameResponsive {
+    font-size: 4.5rem;
+  }
+  .firstNameResponsive {
+    font-size: 4.5rem;
+  }
+  .pProfilResponsive {
+    font-size: 20px;
+    width: 23.25rem;
+  }
+  /* Profil */
+
+  #skillCard {
+    margin: 0 1.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* Profil */
+  .lastNameResponsive {
+    font-size: 4rem;
+  }
+  .firstNameResponsive {
+    font-size: 3.75rem;
+  }
+  .pProfilResponsive {
+    width: 23.25rem;
+  }
+  /* Profil */
+  #skillElement {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* Profil */
+  .firstNameResponsive {
+    padding-bottom: 0px;
+  }
+  .pProfilResponsive {
+    text-align: center;
+    width: 43.25rem;
+  }
+  /* Profil */
+
+  /* Global */
+  .h2ResponsiveGlobal {
+    width: 41rem;
+    font-size: 2rem;
+  }
+  .h3ResponsiveGlobal {
+    font-size: 1.5rem;
+  }
+
+  .pResponsiveGlobal {
+    width: 41rem;
+    font-size: 1rem;
+  }
+  /* Global */
+
+  #skillCard {
+    flex-direction: column;
+    align-items: center;
+  }
+  #skillElement {
+    width: 41rem;
+    margin: 1rem;
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Profil */
+  .lastNameResponsive {
+    font-size: 3rem;
+  }
+  .firstNameResponsive {
+    font-size: 3.2rem;
+  }
+  /* Profil */
+
+  /* Global */
+  .h2ResponsiveGlobal {
+    width: 30rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+  .h3ResponsiveGlobal {
+    font-size: 1.5rem;
+  }
+  .pResponsiveGlobal {
+    width: 30rem;
+    line-height: 2;
+  }
+  .pProfilResponsive {
+    width: 30.25rem;
+  }
+  /* Global */
+
+  #skillElement {
+    width: 29rem;
+  }
+}
+
+@media (max-width: 525px) {
+  /* Profil */
+  .containerProfilResponsive {
+    padding-top: 30px;
+  }
+  .lastNameResponsive {
+    font-size: 2.6rem;
+  }
+  .firstNameResponsive {
+    font-size: 2.8rem;
+  }
+  .pProfilResponsive {
+    font-size: 1.2rem;
+    width: 21.6rem;
+  }
+  /* Profil */
+
+  /* Global */
+  .h2ResponsiveGlobal {
+    width: 20.875rem;
+    font-size: 1.7rem;
+  }
+  .h3ResponsiveGlobal {
+    font-size: 1.3rem;
+  }
+  .pResponsiveGlobal {
+    width: 20.875rem;
+    line-height: 1.5;
+  }
+  .pProfilResponsive {
+    width: 21rem;
+  }
+  /* Global */
+
+  #skillElement {
+    width: 21.5rem;
+    padding: 0 2rem;
+  }
+}

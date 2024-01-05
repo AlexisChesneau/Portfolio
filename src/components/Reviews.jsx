@@ -2,11 +2,13 @@ export default function Reviews() {
   return (
     <section className="mt-32 relative">
       <div className="flex flex-col items-center">
-        <h3 className="text-3xl font-extrabold">Testimonial</h3>
-        <h2 className="text-5xl text-center py-6 w-[45rem]">
+        <h3 className="text-3xl font-extrabold h3ResponsiveGlobal">
+          Testimonial
+        </h3>
+        <h2 className="text-5xl text-center py-6 w-[45rem] h2ResponsiveGlobal">
           Client raves and reviews
         </h2>
-        <p className="text-lg leading-9 text-center w-[50rem]">
+        <p className="text-lg leading-9 text-center w-[50rem] pResponsiveGlobal">
           Discover what our clients are saying about our exceptional web
           development services. Read testimonials that speak to our commitment
           and expertise.

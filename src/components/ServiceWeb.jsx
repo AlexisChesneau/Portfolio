@@ -6,36 +6,37 @@ function ServiceWeb() {
   return (
     <section className="mt-32 relative">
       <CircleShadow
-        fhd={"max-[1920px]:top-[-20%] max-[1920px]:left-[-15%]"} // 1920px
-        qhd={"top-[-20%] left-[-15%]"} // 2560px
+        fhd={"max-[1920px]:top-[-20%] max-[1920px]:left-[-15%]"}
+        qhd={"top-[-20%] left-[-15%]"}
       />
       <CircleShadow
-        fhd={"max-[1920px]:top-[-50%] max-[1920px]:left-[65%]"} // 1920px
-        qhd={"top-[-50%] left-[75%]"} // 2560px
+        fhd={"max-[1920px]:top-[-50%] max-[1920px]:left-[65%]"}
+        qhd={"top-[-50%] left-[75%]"}
       />
       <CircleShadow
-        fhd={"max-[1920px]:top-[50%] max-[1920px]:left-[1%]"} // 1920px
-        qhd={"top-[50%] left-[5%]"} // 2560px
+        fhd={"max-[1920px]:top-[50%] max-[1920px]:left-[1%]"}
+        qhd={"top-[50%] left-[5%]"}
       />
       <CircleShadow
-        fhd={"max-[1920px]:top-[50%] max-[1920px]:left-[50%]"} // 1920px
-        qhd={"top-[45%] left-[55%]"} // 2560px
+        fhd={"max-[1920px]:top-[50%] max-[1920px]:left-[50%]"}
+        qhd={"top-[45%] left-[55%]"}
       />
       <div className="flex flex-col text-center items-center">
-        <h3 className="leading-10 text-3xl font-extrabold">
+        <h3 className="leading-10 text-3xl font-extrabold h3ResponsiveGlobal">
           Web Development Services
         </h3>
-        <h1 className="text-5xl py-6 w-[60rem]">
+        <h2 className="text-5xl py-6 w-[60rem] h2ResponsiveGlobal">
           TRANSFORME VISIONS INTO DIGITAL EXCELLENCE
-        </h1>
-        <p className="text-lg leading-9 w-[54rem]">
+        </h2>
+        <p className="text-lg leading-9 w-[54rem] pResponsiveGlobal">
           We specialize in creating seamless, visually stunning websites
           tailored to your unique vision and goals.
         </p>
       </div>
-      <div className="flex gap-[2%] justify-center py-8">
+      <div id="skillCard" className="flex gap-[2%] justify-center py-8">
         {skillServiceArray.map((eachService, skillidx) => (
           <div
+            id="skillElement"
             className="h-[22.188rem] w-[25rem] bg-white bg-opacity-[4%] rounded-3xl flex flex-col justify-evenly px-8"
             key={skillidx}
           >
@@ -49,8 +50,10 @@ function ServiceWeb() {
               </div>
             </div>
             <div>
-              <h3 className="text-lg font-bold">{eachService.title}</h3>
-              <p>{eachService.description}</p>
+              <h3 className="w-[255px] text-lg font-bold max-[1200px]:leading-7 max-[1200px]:pb-3">
+                {eachService.title}
+              </h3>
+              <p className="h-[75px]">{eachService.description}</p>
             </div>
             <div className="flex">
               {eachService.tag.map((eachTag, tagidx) => (
@@ -64,13 +67,6 @@ function ServiceWeb() {
             </div>
           </div>
         ))}
-      </div>
-      <div className="flex justify-center">
-        <CustomButton
-          string={"Explore My Work"}
-          width={"w-[200px]"}
-          widthDiv={"w-[202px]"}
-        />
       </div>
     </section>
   );
