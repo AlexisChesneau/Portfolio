@@ -14,15 +14,20 @@ export default function Footer() {
       </div>
       <div className="h-[1px] w-full bg-white mt-[8rem]"></div>
       <div className="flex items-center">
-        <div className="h-[8.5rem] w-full flex items-center justify-between px-24">
+        <div
+          id="contrainerSocialNetwork"
+          className="h-[8.5rem] w-full flex items-center justify-between px-24"
+        >
           <div>
-            <p>© 2023 Alexis Chesneau. All rights reserved</p>
+            <p className="max-[720px]:text-[0.8rem]">
+              © 2023 Alexis Chesneau. All rights reserved
+            </p>
           </div>
-          <div className="flex gap-14">
+          <div className="flex gap-14 max-[1024px]:gap-4 max-[525px]:gap-8">
             {reseaux.map((reseau, idx) => (
               <div key={idx}>
                 <img
-                  className="border-2 p-2 rounded-full w-[50px] h-[50px]"
+                  className="border-2 p-2 rounded-full w-[50px] h-[50px] max-[720px]:h-[40px] max-[720px]:w-[40px]"
                   src={reseau.src}
                   alt={reseau.alt}
                 />

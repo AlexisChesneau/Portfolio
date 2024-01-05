@@ -13,15 +13,18 @@ export default function Reviews() {
           development services. Read testimonials that speak to our commitment
           and expertise.
         </p>
-        <div className="w-[81.25rem] h-[22.2rem] flex flex-col justify-between items-center bg-white bg-opacity-[4%] rounded-3xl my-[5rem] p-[2.8rem]">
-          <div className="h-[6rem] w-[6rem] bg-[#3FD0BF] flex justify-center rounded-full">
+        <div
+          id="reviewsCard"
+          className="w-[81.25rem] h-[22.2rem] flex flex-col justify-between items-center bg-white bg-opacity-[4%] rounded-3xl my-[5rem] p-[2.8rem]"
+        >
+          <div className="h-[6rem] w-[6rem] bg-[#3FD0BF] flex justify-center rounded-full max-[1200px]:h-[4rem] max-[1200px]:w-[4rem] max-[1200px]:items-center">
             <img
-              className=""
+              className="max-[1200px]:h-[30px] max-[1200px]:w-[30px]"
               src="images/reviewsweb/DQuote.svg"
               alt="DQuaote"
             />
           </div>
-          <p className="text-3xl font-extrabold text-center">
+          <p className="text-3xl font-extrabold text-center reviewsClientRexponsive">
             Incredible web development team! Exceeded expectations with
             innovative solutions. Seamless process. Highly recommend!
           </p>

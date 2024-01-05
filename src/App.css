@@ -53,10 +53,20 @@ h2 {
     font-size: 20px;
     width: 23.25rem;
   }
-  /* Profil */
 
+  /* Service */
   #skillCard {
     margin: 0 1.5rem;
+  }
+
+  /* Projet */
+  #projetCard {
+    width: 71.063rem;
+  }
+
+  /* Reviews */
+  #reviewsCard {
+    width: 71.063rem;
   }
 }
 
@@ -71,9 +81,52 @@ h2 {
   .pProfilResponsive {
     width: 23.25rem;
   }
-  /* Profil */
+
+  /* Global */
+  .h2ResponsiveGlobal {
+    width: 55rem;
+    font-size: 2.2rem;
+  }
+  .h3ResponsiveGlobal {
+    font-size: 1.6rem;
+  }
+
+  .pResponsiveGlobal {
+    width: 50rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  /* Service */
+  #skillCard {
+    gap: 1%;
+  }
   #skillElement {
-    width: 25rem;
+    width: 24rem;
+  }
+
+  /* Projet */
+  #projetCard {
+    height: 28rem;
+    width: 60rem;
+    padding: 1.5rem;
+  }
+  .pProjetResponsive {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .dateProjetResponsive {
+    font-size: 0.8rem;
+  }
+
+  /* Reviews */
+  #reviewsCard {
+    width: 60rem;
+  }
+
+  .reviewsClientRexponsive {
+    font-size: 1.5rem;
   }
 }
 
@@ -86,7 +139,6 @@ h2 {
     text-align: center;
     width: 43.25rem;
   }
-  /* Profil */
 
   /* Global */
   .h2ResponsiveGlobal {
@@ -98,11 +150,11 @@ h2 {
   }
 
   .pResponsiveGlobal {
-    width: 41rem;
+    width: 43rem;
     font-size: 1rem;
   }
-  /* Global */
 
+  /* Service */
   #skillCard {
     flex-direction: column;
     align-items: center;
@@ -110,7 +162,35 @@ h2 {
   #skillElement {
     width: 41rem;
     margin: 1rem;
-    padding: 0 4rem;
+  }
+
+  /* Projet */
+  #projetCard {
+    height: 41rem;
+    width: 40rem;
+    flex-direction: column;
+  }
+  .pProjetResponsive {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 1.5rem 0;
+  }
+  .dateProjetResponsive {
+    font-size: 0.8rem;
+  }
+
+  /* Reviews */
+  #reviewsCard {
+    width: 40rem;
+  }
+  .reviewsClientRexponsive {
+    font-size: 1.3rem;
+  }
+
+  /* Footer */
+  #contrainerSocialNetwork {
+    justify-content: space-evenly;
+    padding: 0 2rem;
   }
 }
 
@@ -122,7 +202,9 @@ h2 {
   .firstNameResponsive {
     font-size: 3.2rem;
   }
-  /* Profil */
+  .pProfilResponsive {
+    width: 30.25rem;
+  }
 
   /* Global */
   .h2ResponsiveGlobal {
@@ -137,13 +219,24 @@ h2 {
     width: 30rem;
     line-height: 2;
   }
-  .pProfilResponsive {
-    width: 30.25rem;
-  }
-  /* Global */
 
+  /* Service */
   #skillElement {
     width: 29rem;
+  }
+
+  /* Projet */
+  #projetCard {
+    width: 30rem;
+  }
+
+  /* Reviews */
+  #reviewsCard {
+    width: 30rem;
+  }
+  .reviewsClientRexponsive {
+    width: 28rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -162,7 +255,6 @@ h2 {
     font-size: 1.2rem;
     width: 21.6rem;
   }
-  /* Profil */
 
   /* Global */
   .h2ResponsiveGlobal {
@@ -179,10 +271,33 @@ h2 {
   .pProfilResponsive {
     width: 21rem;
   }
-  /* Global */
 
+  /* Projet */
+  #projetCard {
+    height: 35rem;
+    width: 21rem;
+  }
+
+  /* Reviews */
+  #reviewsCard {
+    height: 22rem;
+    width: 21rem;
+  }
+  .reviewsClientRexponsive {
+    width: 18rem;
+    padding: 1.8rem 0;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* Service */
   #skillElement {
     width: 21.5rem;
     padding: 0 2rem;
+  }
+
+  /* Footer */
+  #contrainerSocialNetwork {
+    flex-direction: column;
   }
 }
