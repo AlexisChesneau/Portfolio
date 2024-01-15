@@ -1,17 +1,27 @@
+import { useEffect, useState } from "react";
+import message from "../data/review.json";
+
 export default function Reviews() {
+  const [index, setIndex] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((index) => (index + 1) % message.length);
+    }, 1500);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <section className="mt-32 relative">
       <div className="flex flex-col items-center">
         <h3 className="text-3xl font-extrabold h3ResponsiveGlobal">
-          Testimonial
+          Temoignages
         </h3>
         <h2 className="text-5xl text-center py-6 w-[45rem] h2ResponsiveGlobal">
           Client raves and reviews
         </h2>
         <p className="text-lg leading-9 text-center w-[50rem] pResponsiveGlobal">
-          Discover what our clients are saying about our exceptional web
-          development services. Read testimonials that speak to our commitment
-          and expertise.
+          Découvrez ce que disent les gens à propos de mes services de
+          développement web. Lisez les témoignages de personnes totalement
+          ordinaires.
         </p>
         <div
           id="reviewsCard"
@@ -25,10 +35,9 @@ export default function Reviews() {
             />
           </div>
           <p className="text-3xl font-extrabold text-center reviewsClientRexponsive">
-            Incredible web development team! Exceeded expectations with
-            innovative solutions. Seamless process. Highly recommend!
+            {message[index].message}
           </p>
-          <p>- Sarah Thompson -</p>
+          <p>- {message[index].name} -</p>
         </div>
       </div>
     </section>

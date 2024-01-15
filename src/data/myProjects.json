@@ -1,5 +1,12 @@
 [
   {
+    "src": "images/projet/PokedexCards.png",
+    "alt": "Pokedex Cards",
+    "title": "Pokedex Cards",
+    "description": "Un Pokédex Card crée via une API. Vous pouvez découvrir tous les Pokémon de la 1ère à la 9e génération sous forme de cartes",
+    "date": "Decembre 2023"
+  },
+  {
     "src": "images/projet/project1.png",
     "alt": "images project 1",
     "title": "E-Commerce Bliss",

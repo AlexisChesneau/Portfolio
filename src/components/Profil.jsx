@@ -5,7 +5,7 @@ export default function Profil() {
   return (
     <section className="relative">
       <div className="w-[1px] h-[48.8rem] bg-white absolute left-[58%] max-[1920px]:left-[58%] opacity-60 lgHidden"></div>
-      <div className="w-full h-[1px] bg-white absolute top-[44%] opacity-60 max-[1920px]:top-[44%] max-[1536px]:top-[40%] max-[1200px]:top-[39%] lgHidden"></div>
+      <div className="w-full h-[1px] bg-white absolute top-[44%] opacity-60 max-[1920px]:top-[44%] max-[1536px]:top-[42%] max-[1200px]:top-[42%] lgHidden"></div>
       <CircleShadow
         xl={"max-[1280px]:top-[-20%] max-[1280px]:left-[-35%]"}
         fhd={"max-[1920px]:top-[-20%] max-[1920px]:left-[-20%]"}
@@ -28,10 +28,9 @@ export default function Profil() {
             ALEXIS
           </h3>
           <p className="text-[22px] w-[31.25rem] pProfilResponsive">
-            Hello, I'm Alexis Chesneau, a passionate web developer dedicated to
-            transforming ideas into dynamic digital experiences. With a keen eye
-            for design and expertise in coding, I craft websites that leave a
-            lasting impression
+            Bienvenue sur ce portfolio où je stocke et partage mes différents
+            projets. Je suis passionné par l'informatique et le développement
+            web. N'hésitez pas à me contacter si vous avez des questions.
           </p>
           <CustomButton
             string={"Contact"}

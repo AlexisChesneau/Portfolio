@@ -5,9 +5,9 @@ export default function Footer() {
     <footer className="mt-32 relative">
       <div className="flex flex-col items-center">
         <h2 className="text-5xl text-center w-[55rem] h2ResponsiveGlobal">
-          Interested in work together
+          INTERESSE POUR TRAVAILLER ENSEMBLE
         </h2>
-        <p className="py-10">Drop an Email</p>
+        <p className="py-10">Envoyer un mail</p>
         <p className="border-2 py-4 px-16 rounded-full max-[720px]:px-8">
           alexischesneau64@gmail.com
         </p>

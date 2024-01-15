@@ -1,4 +1,3 @@
-import CustomButton from "./CustomButton";
 import CircleShadow from "./CircleShadow";
 import skillServiceArray from "../data/skillServiceArray.json";
 
@@ -50,7 +49,7 @@ function ServiceWeb() {
               </div>
             </div>
             <div>
-              <h3 className="w-[255px] text-lg font-bold max-[1200px]:leading-7 max-[1200px]:pb-3">
+              <h3 className="w-[280px] leading-7 text-[1.25rem] font-bold pb-3 max-[1200px]:leading-7">
                 {eachService.title}
               </h3>
               <p className="h-[75px]">{eachService.description}</p>

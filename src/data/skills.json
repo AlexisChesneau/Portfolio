@@ -1,22 +1,22 @@
 [
   {
-    "src": "images/techno/js.svg",
-    "alt": "JavaScript"
-  },
-  {
     "src": "images/techno/html.svg",
     "alt": "HTML"
   },
   {
-    "src": "images/techno/c++.svg",
-    "alt": "C++"
-  },
-  {
-    "src": "images/techno/php.svg",
-    "alt": "PHP"
+    "src": "images/techno/js.svg",
+    "alt": "JavaScript"
   },
   {
     "src": "images/techno/react.svg",
     "alt": "React"
+  },
+  {
+    "src": "images/techno/tailwind.svg",
+    "alt": "Tailwind"
+  },
+  {
+    "src": "images/techno/php.svg",
+    "alt": "PHP"
   }
 ]

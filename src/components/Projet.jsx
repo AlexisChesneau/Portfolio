@@ -31,7 +31,7 @@ export default function Projet() {
       />
       <h3 className="text-3xl font-extrabold h3ResponsiveGlobal">Projets</h3>
       <h2 className="text-5xl text-center py-6 w-[60rem] h2ResponsiveGlobal">
-        Transforming visions into digital excellence
+        Transforme des idees en projets numeriques
       </h2>
       {myProjects.map((project, idx) => (
         <div
@@ -60,9 +60,10 @@ export default function Projet() {
         </div>
       ))}
       <CustomButton
-        string={"View All Projects"}
-        width={"w-[216px]"}
-        widthDiv={"w-[218px]"}
+        custom={myProjects.length <= 2 ? "bg-[#D9D9D9]" : ""}
+        string={"Voir tous mes projets"}
+        width={"w-[250px]"}
+        widthDiv={"w-[252px]"}
       />
     </section>
   );
