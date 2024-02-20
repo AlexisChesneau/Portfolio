@@ -3,21 +3,21 @@
     "src": "images/serviceweb/desktop.svg",
     "alt": "JavaScript",
     "title": "Fabrique Numérique Paloise",
-    "description": "Creating visually appealing and user-friendly designs for optimal user engagement.",
-    "tag": ["UI/UX Design"]
+    "description": "Bootcamp de 3 mois ou j’ai pu découvrir des notions de design du javascript et du wordpress.",
+    "tag": ["UI/UX Design", "Wordpress"]
   },
   {
     "src": "images/serviceweb/brackets.svg",
     "alt": "JavaScript",
     "title": "Wild Code School",
-    "description": "Designing and developing interactive applications accessible through web browsers.",
-    "tag": ["Optimization", "Funtionality"]
+    "description": "Bootcamp de 5 mois ou j’ai pu découvrir est apprendre sur React. J’ai pu réaliser 3 différent projets en commun.",
+    "tag": ["JavaScript", "React"]
   },
   {
     "src": "images/serviceweb/rocket.svg",
     "alt": "JavaScript",
     "title": "Ecrivez la suite de l’histoire avec moi",
-    "description": "Integrating social media features to boost online presence and engagement.",
-    "tag": ["UI/UX Design"]
+    "description": "Futur alternant dans votre entreprise qui cherche à prendre de l’expérience et à s’améliorer.",
+    "tag": ["Découvrir", "Apprendre"]
   }
 ]

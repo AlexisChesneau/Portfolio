@@ -32,11 +32,16 @@ export default function Profil() {
             projets. Je suis passionné par l'informatique et le développement
             web. N'hésitez pas à me contacter si vous avez des questions.
           </p>
-          <CustomButton
-            string={"Contact"}
-            width={"w-[165px]"}
-            widthDiv={"w-[167px]"}
-          />
+          <a
+            href="https://www.linkedin.com/in/alexis-chesneau-0951b4243/"
+            target="_blank"
+          >
+            <CustomButton
+              string={"Contact"}
+              width={"w-[165px]"}
+              widthDiv={"w-[167px]"}
+            />
+          </a>
         </div>
         <div className="flex h-[700px] items-end lgHidden relative">
           <img

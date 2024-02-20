@@ -22,15 +22,15 @@ function ServiceWeb() {
       />
       <div className="flex flex-col text-center items-center">
         <h3 className="leading-10 text-3xl font-extrabold h3ResponsiveGlobal">
-          Web Development Services
+          Expérience Web Developpement
         </h3>
-        <h2 className="text-5xl py-6 w-[60rem] h2ResponsiveGlobal">
-          TRANSFORME VISIONS INTO DIGITAL EXCELLENCE
+        <h2 className="text-5xl py-6 w-[75rem] h2ResponsiveGlobal">
+          MES DIFFERENTES EXPERIENCE EN DEVELOPPEMENT WEB
         </h2>
-        <p className="text-lg leading-9 w-[54rem] pResponsiveGlobal">
+        {/* <p className="text-lg leading-9 w-[54rem] pResponsiveGlobal">
           We specialize in creating seamless, visually stunning websites
           tailored to your unique vision and goals.
-        </p>
+        </p> */}
       </div>
       <div id="skillCard" className="flex gap-[2%] justify-center py-8">
         {skillServiceArray.map((eachService, skillidx) => (

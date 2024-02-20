@@ -34,33 +34,35 @@ export default function Projet() {
         Transforme des idees en projets numeriques
       </h2>
       {myProjects.map((project, idx) => (
-        <div
-          id="projetCard"
-          key={idx}
-          className={`w-[81.25rem] h-[35rem] flex bg-white bg-opacity-[4%] rounded-3xl my-[2.5rem] p-[2.8rem] ${
-            idx % 2 === 1 ? "flex-row-reverse" : ""
-          }`}
-        >
-          <div className="flex flex-col justify-center">
-            <h3 className="text-3xl font-extrabold">{project.title}</h3>
-            <p className="text-lg leading-9 py-10 pProjetResponsive">
-              {project.description}
-            </p>
-            <p className="border-[1px] rounded-full mr-auto px-4 py-1 dateProjetResponsive">
-              {project.date}
-            </p>
-          </div>
-          <img
-            className={`h-[100%] rounded-3xl max-[1200px]:h-[400px] max-[1024px]:mt-10 max-[1024px]:m-0 max-[525px]:h-[260px] ${
-              idx % 2 === 1 ? "mr-20" : "ml-20"
+        <a href={project.lien} target="_blank">
+          <div
+            id="projetCard"
+            key={idx}
+            className={`w-[81.25rem] h-[35rem] flex bg-white bg-opacity-[4%] rounded-3xl my-[2.5rem] p-[2.8rem] ${
+              idx % 2 === 1 ? "flex-row-reverse" : ""
             }`}
-            src={project.src}
-            alt={project.alt}
-          />
-        </div>
+          >
+            <div className="flex flex-col justify-center">
+              <h3 className="text-3xl font-extrabold">{project.title}</h3>
+              <p className="text-lg leading-9 py-10 pProjetResponsive">
+                {project.description}
+              </p>
+              <p className="border-[1px] rounded-full mr-auto px-4 py-1 dateProjetResponsive">
+                {project.date}
+              </p>
+            </div>
+            <img
+              className={`h-[100%] rounded-3xl max-[1200px]:h-[400px] max-[1024px]:mt-10 max-[1024px]:m-0 max-[525px]:h-[260px] ${
+                idx % 2 === 1 ? "mr-20" : "ml-20"
+              }`}
+              src={project.src}
+              alt={project.alt}
+            />
+          </div>
+        </a>
       ))}
       <CustomButton
-        custom={myProjects.length <= 2 ? "bg-[#D9D9D9]" : ""}
+        custom={myProjects.length <= 2 ? "cursor-no-drop" : ""}
         string={"Voir tous mes projets"}
         width={"w-[250px]"}
         widthDiv={"w-[252px]"}

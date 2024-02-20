@@ -1,22 +1,14 @@
 [
   {
     "name": "Alan Turing",
-    "message": "a"
+    "message": "Un jeune homme attentionné qui ne se contente pas de coder, mais qui a également le don de préparer un café parfait. Grâce à lui, je suis devenu la légende que l'on connaît."
   },
   {
     "name": "Maman",
-    "message": "b"
+    "message": "Son talent m'épate depuis toujours, et je le soutiens depuis ses débuts. Le développement web, c'est son domaine, et il le rend aussi chaleureux que la maison"
   },
   {
     "name": "Elon Musk",
-    "message": "c"
-  },
-  {
-    "name": "4",
-    "message": "d"
-  },
-  {
-    "name": "5",
-    "message": "e"
+    "message": "Un génie créatif ! Grâce à ses conseils, j'ai même envisagé de renommer Twitter. Ses services sont à recommander sans hésitation. Merci pour la révolution, camarade du code !"
   }
 ]

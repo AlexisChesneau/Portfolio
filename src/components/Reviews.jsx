@@ -6,7 +6,7 @@ export default function Reviews() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((index) => (index + 1) % message.length);
-    }, 1500);
+    }, 10000);
     return () => clearInterval(interval);
   }, []);
   return (

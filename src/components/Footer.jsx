@@ -8,9 +8,11 @@ export default function Footer() {
           INTERESSE POUR TRAVAILLER ENSEMBLE
         </h2>
         <p className="py-10">Envoyer un mail</p>
-        <p className="border-2 py-4 px-16 rounded-full max-[720px]:px-8">
-          alexischesneau64@gmail.com
-        </p>
+        <a href="mailto:chesneaualexis64@gmail.com">
+          <p className="border-2 py-4 px-16 rounded-full max-[720px]:px-8">
+            chesneaualexis64@gmail.com
+          </p>
+        </a>
       </div>
       <div className="h-[1px] w-full bg-white mt-[8rem]"></div>
       <div className="flex items-center">

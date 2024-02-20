@@ -4,27 +4,7 @@
     "alt": "Pokedex Cards",
     "title": "Pokedex Cards",
     "description": "Un Pokédex Card crée via une API. Vous pouvez découvrir tous les Pokémon de la 1ère à la 9e génération sous forme de cartes",
-    "date": "Decembre 2023"
-  },
-  {
-    "src": "images/projet/project1.png",
-    "alt": "images project 1",
-    "title": "E-Commerce Bliss",
-    "description": "Crafted a dynamic e-commerce platform for seamless online shopping, enhancing user experience with intuitive design and secure transactions.",
-    "date": "March 2022 - June 2022"
-  },
-  {
-    "src": "images/projet/project2.png",
-    "alt": "images project 2",
-    "title": "SocialHub Connect",
-    "description": "Developed a social media integration platform, empowering clients to enhance online presence through unified social engagement tools.",
-    "date": "September 2021 - December 2021"
-  },
-  {
-    "src": "images/projet/project3.png",
-    "alt": "images project 3",
-    "title": "Responsive Portfolio Revamp",
-    "description": "Transformed a personal portfolio website into a mobile-responsive showcase, optimizing user engagement and visual appeal.",
-    "date": "January 2023 - March 2023"
+    "date": "Decembre 2023",
+    "lien": "https://alexischesneau.github.io/Pokedex/"
   }
 ]
