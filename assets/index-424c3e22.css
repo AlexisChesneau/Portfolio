@@ -788,11 +788,11 @@ video {
   font-family: Quicksand;
   font-weight: 400;
   src: local("Quicksand-Regular"),
-    url(./assets/Quicksand-Regular-1eca93a8.ttf) format("opentype");
+    url(./Quicksand-Regular-1eca93a8.ttf) format("opentype");
 }
 @font-face {
   font-family: Rugen;
-  src: local("Rugen"), url(./assets/Rugen-c06b0923.otf) format("opentype");
+  src: local("Rugen"), url(./Rugen-c06b0923.otf) format("opentype");
 }
 ::-webkit-scrollbar {
   width: 12px;
