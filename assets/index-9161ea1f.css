@@ -513,9 +513,6 @@ video {
 .w-\[4\.8rem\] {
   width: 4.8rem;
 }
-.w-\[45rem\] {
-  width: 45rem;
-}
 .w-\[50px\] {
   width: 50px;
 }
@@ -539,6 +536,9 @@ video {
 }
 .w-\[6rem\] {
   width: 6rem;
+}
+.w-\[70rem\] {
+  width: 70rem;
 }
 .w-\[75rem\] {
   width: 75rem;
@@ -996,7 +996,7 @@ h2 {
   }
   .h2ResponsiveGlobal {
     width: 20.875rem;
-    font-size: 1.7rem;
+    font-size: 1.59rem;
   }
   .h3ResponsiveGlobal {
     font-size: 1.3rem;
