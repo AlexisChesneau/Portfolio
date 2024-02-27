@@ -25,7 +25,7 @@ function ServiceWeb() {
           Expérience Web Developpement
         </h3>
         <h2 className="text-5xl py-6 w-[75rem] h2ResponsiveGlobal">
-          MES DIFFERENTES EXPERIENCE EN DEVELOPPEMENT WEB
+          MES DIFFERENTES EXPERIENCES EN DEVELOPPEMENT WEB
         </h2>
         {/* <p className="text-lg leading-9 w-[54rem] pResponsiveGlobal">
           We specialize in creating seamless, visually stunning websites

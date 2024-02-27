@@ -27,13 +27,14 @@ export default function Footer() {
           </div>
           <div className="flex gap-14 max-[1024px]:gap-4 max-[525px]:gap-8">
             {reseaux.map((reseau, idx) => (
-              <div key={idx}>
-                <img
-                  className="border-2 p-2 rounded-full w-[50px] h-[50px] max-[720px]:h-[40px] max-[720px]:w-[40px]"
-                  src={reseau.src}
-                  alt={reseau.alt}
-                />
-              </div>
+              <a href={reseau.lien} target="_blank">
+                <div
+                  key={idx}
+                  className="flex items-center justify-center border-2 p-2 rounded-full w-[50px] h-[50px] max-[720px]:h-[40px] max-[720px]:w-[40px]"
+                >
+                  <img src={reseau.src} alt={reseau.alt} />
+                </div>
+              </a>
             ))}
           </div>
         </div>

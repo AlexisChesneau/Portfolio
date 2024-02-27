@@ -15,8 +15,8 @@ export default function Reviews() {
         <h3 className="text-3xl font-extrabold h3ResponsiveGlobal">
           Temoignages
         </h3>
-        <h2 className="text-5xl text-center py-6 w-[45rem] h2ResponsiveGlobal">
-          Client raves and reviews
+        <h2 className="text-5xl text-center py-6 w-[70rem] h2ResponsiveGlobal">
+          Appreciations et retours clients
         </h2>
         <p className="text-lg leading-9 text-center w-[50rem] pResponsiveGlobal">
           Découvrez ce que disent les gens à propos de mes services de

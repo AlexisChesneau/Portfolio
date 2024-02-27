@@ -3,21 +3,21 @@
     "src": "images/serviceweb/desktop.svg",
     "alt": "JavaScript",
     "title": "Fabrique Numérique Paloise",
-    "description": "Bootcamp de 3 mois ou j’ai pu découvrir des notions de design du javascript et du wordpress.",
+    "description": "Bootcamp de 3 mois où j’ai pu découvrir javascript, wordpress et des notions de design.",
     "tag": ["UI/UX Design", "Wordpress"]
   },
   {
     "src": "images/serviceweb/brackets.svg",
     "alt": "JavaScript",
     "title": "Wild Code School",
-    "description": "Bootcamp de 5 mois ou j’ai pu découvrir est apprendre sur React. J’ai pu réaliser 3 différent projets en commun.",
+    "description": "Bootcamp de 5 mois où j’ai pu découvrir React en réalisant 3 projets différents en commun.",
     "tag": ["JavaScript", "React"]
   },
   {
     "src": "images/serviceweb/rocket.svg",
     "alt": "JavaScript",
-    "title": "Ecrivez la suite de l’histoire avec moi",
-    "description": "Futur alternant dans votre entreprise qui cherche à prendre de l’expérience et à s’améliorer.",
+    "title": "Ecrivons la suite de l’histoire ensemble",
+    "description": "Futur alternant dans votre entreprise qui cherche à monter en expérience et à s’améliorer.",
     "tag": ["Découvrir", "Apprendre"]
   }
 ]

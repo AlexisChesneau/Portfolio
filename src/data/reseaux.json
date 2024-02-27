@@ -1,14 +1,17 @@
 [
   {
-    "src": "images/reseau/facebook.svg",
-    "alt": "facebook"
+    "src": "images/reseau/linkedin.svg",
+    "alt": "linkdin",
+    "lien": "https://www.linkedin.com/in/alexis-chesneau-0951b4243/"
   },
   {
     "src": "images/reseau/instagram.svg",
-    "alt": "instagram."
+    "alt": "instagram.",
+    "lien": "https://www.instagram.com/alexis.chesn/"
   },
   {
-    "src": "images/reseau/twitter.svg",
-    "alt": "twitter"
+    "src": "images/reseau/github.svg",
+    "alt": "github",
+    "lien": "https://github.com/AlexisChesneau"
   }
 ]
