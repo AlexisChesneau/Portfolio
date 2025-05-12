@@ -13,8 +13,7 @@ Je m'appelle Alexis, je suis un ancien pâtissier passionné d'informatique, je 
 
 - **Développement web** : HTML, CSS, JavaScript, React, Node.js
 - **Administration système** : Configuration d'ordinateurs et d'imprimantes, résolution de problèmes sur Windows
-- **Logiciels** : KONICA MINOLTA, IIP, antivirus et sécurité
-- **Outils de collaboration** : Git, GitHub, Trello
+- **Outils de collaboration** : Git, GitHub, Figma
 
 ## 📂 Mes projets
 
