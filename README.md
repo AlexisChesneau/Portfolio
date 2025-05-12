@@ -30,7 +30,6 @@ Site web réalisé pour une Ostéopathe Animalière, présentant ses prestations
 
 J’ai suivi une formation à la Wild Code School où j’ai appris à développer des sites web modernes en utilisant des technologies comme HTML, CSS, Tailwind, JavaScript et React. C’est cette formation qui m’a permis de poser des bases solides en développement web. En parallèle, j’ai acquis des compétences de technicien informatique en montant mes propres PC et en aidant régulièrement mes amis à configurer, réparer ou optimiser leurs machines. Pour renforcer tout ça, j’ai effectué un stage chez le groupe Alvarez, où j’ai appris énormément de choses grâce à un vrai contexte professionnel : développement d’outils internes en JavaScript, installation et configuration d’imprimantes via un logiciel dédié, dépannage logiciel, rédaction de procédures, et bien plus.
 
-
 ## 🔗 Contact
 
 Si vous avez des questions, ou si vous souhaitez collaborer sur un projet, n'hésitez pas à me contacter !
