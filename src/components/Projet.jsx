@@ -31,7 +31,7 @@ export default function Projet() {
       />
       <h3 className="text-3xl font-extrabold h3ResponsiveGlobal">Projets</h3>
       <h2 className="text-5xl text-center py-6 w-[60rem] h2ResponsiveGlobal">
-        Transforme mes idees en projets numeriques
+        DU CONCEPT À LA RÉALISATION NUMÉRIQUE
       </h2>
       {myProjects.map((project, idx) => (
         <a href={project.lien} target="_blank">

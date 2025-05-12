@@ -11,10 +11,17 @@ module.exports = {
 
       fontFamily: {
         sans: ["Quicksand", "sans-serif"],
-        header: ["Rugen", "sans-serif"],
+        header: ["Anton", "sans-serif"],
       },
 
       fontSize: {
+        "5xl": [
+          "3rem",
+          {
+            lineHeight: "1.2",
+            fontWeight: "700",
+          },
+        ],
         "2xl": [
           "2.5rem",
           {
@@ -67,10 +74,10 @@ module.exports = {
       },
 
       scale: {
-        '101': '1.01',
-        '102': '1.02',
-        '103': '1.03', 
-        '104': '1.04',
+        101: "1.01",
+        102: "1.02",
+        103: "1.03",
+        104: "1.04",
       },
     },
   },

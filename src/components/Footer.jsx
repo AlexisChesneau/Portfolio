@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="mt-32 relative">
       <div className="flex flex-col items-center">
         <h2 className="text-5xl text-center w-[55rem] h2ResponsiveGlobal">
-          INTERESSE POUR TRAVAILLER ENSEMBLE
+          INTÉRESSÉ POUR TRAVAILLER ENSEMBLE ?
         </h2>
         <p className="py-10">Envoyer un mail</p>
         <a href="mailto:chesneaualexis64@gmail.com">
