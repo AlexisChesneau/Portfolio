@@ -9,7 +9,7 @@ export default function Footer() {
         </h2>
         <p className="py-10">Envoyer un mail</p>
         <a href="mailto:chesneaualexis64@gmail.com">
-          <p className="border-2 py-4 px-16 rounded-full max-[720px]:px-8">
+          <p className="border-2 py-4 px-16 rounded-full max-[720px]:px-8 transform transition-transform duration-500 ease-in-out hover:scale-105">
             chesneaualexis64@gmail.com
           </p>
         </a>
@@ -30,7 +30,7 @@ export default function Footer() {
               <a href={reseau.lien} target="_blank">
                 <div
                   key={idx}
-                  className="flex items-center justify-center border-2 p-2 rounded-full w-[50px] h-[50px] max-[720px]:h-[40px] max-[720px]:w-[40px]"
+                  className="flex items-center justify-center border-2 p-2 rounded-full w-[50px] h-[50px] max-[720px]:h-[40px] max-[720px]:w-[40px] transform transition-transform duration-500 ease-in-out hover:scale-125"
                 >
                   <img src={reseau.src} alt={reseau.alt} />
                 </div>

@@ -27,10 +27,6 @@ function ServiceWeb() {
         <h2 className="text-5xl py-6 w-[75rem] h2ResponsiveGlobal">
           MES DIFFERENTES EXPERIENCES EN DEVELOPPEMENT WEB
         </h2>
-        {/* <p className="text-lg leading-9 w-[54rem] pResponsiveGlobal">
-          We specialize in creating seamless, visually stunning websites
-          tailored to your unique vision and goals.
-        </p> */}
       </div>
       <div id="skillCard" className="flex gap-[2%] justify-center py-8">
         {skillServiceArray.map((eachService, skillidx) => (

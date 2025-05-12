@@ -6,5 +6,13 @@
     "description": "Un Pokédex Card crée via une API. Vous pouvez découvrir tous les Pokémon de la 1ère à la 9e génération sous forme de cartes",
     "date": "Decembre 2023",
     "lien": "https://alexischesneau.github.io/Pokedex/"
+  },
+    {
+    "src": "images/projet/OsteopatheAnimalier.png",
+    "alt": "Coralie Roux Osthéopathe Animalière",
+    "title": "Coralie Roux Osthéopathe Animalière",
+    "description": "Site web réalisé pour une Ostéopathe Animalière, présentant ses prestations, ses tarifs, les lieux où elle exerce ainsi que ses coordonnées. Le site est responsive et conçu pour une navigation claire sur tous types d’appareils.",
+    "date": "Mai 2025",
+    "lien": "https://alexischesneau.github.io/Projet-Coralie-Roux/"
   }
 ]
