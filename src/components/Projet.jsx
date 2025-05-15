@@ -38,7 +38,7 @@ export default function Projet() {
           <div
             id="projetCard"
             key={idx}
-            className={`w-[81.25rem] h-[35rem] flex bg-white bg-opacity-[4%] rounded-3xl my-[2.5rem] p-[2.8rem] transform transition-transform duration-500 ease-in-out hover:scale-102 ${
+            className={`w-[81.25rem] h-auto flex bg-white bg-opacity-[4%] rounded-3xl my-[2.5rem] p-[2.8rem] transform transition-transform duration-500 ease-in-out hover:scale-102 ${
               idx % 2 === 1 ? "flex-row-reverse" : ""
             }`}
           >
