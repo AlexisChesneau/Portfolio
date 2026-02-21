@@ -27,9 +27,9 @@ export default function Reviews() {
           id="reviewsCard"
           className="w-[81.25rem] h-[22.2rem] flex flex-col justify-between items-center bg-white bg-opacity-[4%] rounded-3xl my-[5rem] p-[2.8rem]"
         >
-          <div className="h-[6rem] w-[6rem] bg-[#3FD0BF] flex justify-center rounded-full max-[1200px]:h-[4rem] max-[1200px]:w-[4rem] max-[1200px]:items-center">
+          <div className="h-[6rem] w-[6rem] bg-[#3FD0BF] flex justify-center items-center rounded-full max-[1200px]:h-[4rem] max-[1200px]:w-[4rem] ">
             <img
-              className="max-[1200px]:h-[30px] max-[1200px]:w-[30px]"
+              className="max-[1200px]:h-[30px] max-[1200px]:w-[30px] h-[35px]" 
               src="images/reviewsweb/DQuote.svg"
               alt="DQuaote"
             />
