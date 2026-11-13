@@ -5,6 +5,7 @@
 @font-face {
   font-family: "Quicksand";
   font-weight: 400;
+  font-display: swap;
   src: local("Quicksand-Regular"),
     url("../public/font/Quicksand-Regular.ttf") format("opentype");
 }
@@ -69,7 +70,7 @@ h2 {
   }
 
   /* Projet */
-  #projetCard {
+  .projetCard {
     width: 71.063rem;
   }
 
@@ -110,12 +111,12 @@ h2 {
   #skillCard {
     gap: 1%;
   }
-  #skillElement {
+  .skillElement {
     width: 24rem;
   }
 
   /* Projet */
-  #projetCard {
+  .projetCard {
     width: 60rem;
     padding: 1.5rem;
   }
@@ -167,13 +168,13 @@ h2 {
     flex-direction: column;
     align-items: center;
   }
-  #skillElement {
+  .skillElement {
     width: 41rem;
     margin: 1rem;
   }
 
   /* Projet */
-  #projetCard {
+  .projetCard {
     width: 40rem;
     flex-direction: column;
   }
@@ -228,12 +229,12 @@ h2 {
   }
 
   /* Service */
-  #skillElement {
+  .skillElement {
     width: 29rem;
   }
 
   /* Projet */
-  #projetCard {
+  .projetCard {
     width: 30rem;
   }
 
@@ -280,7 +281,7 @@ h2 {
   }
 
   /* Projet */
-  #projetCard {
+  .projetCard {
     width: 21rem;
   }
 
@@ -297,13 +298,575 @@ h2 {
   }
 
   /* Service */
-  #skillElement {
+  .skillElement {
     width: 21.5rem;
-    padding: 0 2rem;
   }
 
   /* Footer */
   #contrainerSocialNetwork {
     flex-direction: column;
+  }
+}
+
+/* =====================================================================
+   ANIMATIONS — palette d'origine uniquement
+   fond #15041D · bordeaux #330927 · turquoise #3FD0BF · olive #7E7524 · brun #331D09
+   Tout est animé via transform / opacity (compositing GPU, 60 fps).
+   ===================================================================== */
+:root {
+  --c-bg: #15041d;
+  --c-bordeaux: #330927;
+  --c-teal: #3fd0bf;
+  --c-olive: #7e7524;
+  --c-brown: #331d09;
+  --ease-out: cubic-bezier(0.2, 0.75, 0.2, 1);
+}
+
+/* Focus clavier bien visible */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--c-teal);
+  outline-offset: 4px;
+}
+
+/* ---------- Hero : entrée ---------- */
+/* les lettres gardent la police du titre parent (la règle * imposerait Quicksand) */
+.split-char,
+.split-char + span,
+h1 > span,
+h3 > span {
+  font-family: inherit;
+}
+.split-char {
+  display: inline-block;
+  animation: char-in 0.9s var(--ease-out) both;
+  animation-delay: var(--d, 0ms);
+}
+@keyframes char-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0.5em, 0) rotate(8deg) scale(0.92);
+  }
+}
+
+.enter-up {
+  animation: fade-up 0.9s var(--ease-out) both;
+  animation-delay: var(--d, 0ms);
+}
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 28px, 0);
+  }
+}
+
+.hero-panel {
+  animation: panel-in 1.2s var(--ease-out) 250ms both;
+}
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 50px, 0) scale(0.94);
+  }
+}
+
+.hero-photo {
+  animation: photo-in 1.3s var(--ease-out) 550ms both;
+}
+@keyframes photo-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0) scale(0.97);
+  }
+}
+
+.line-draw-y {
+  transform-origin: top;
+  animation: draw-y 1.4s var(--ease-out) both;
+}
+.line-draw-x {
+  transform-origin: left;
+  animation: draw-x 1.6s var(--ease-out) 150ms both;
+}
+@keyframes draw-y {
+  from {
+    transform: scaleY(0);
+  }
+}
+@keyframes draw-x {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+/* Lumière qui suit la souris (activée en JS, souris uniquement) */
+.hero-spotlight {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 640px;
+  height: 640px;
+  margin: -320px 0 0 -320px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(63, 208, 191, 0.16) 0%,
+    rgba(126, 117, 36, 0.07) 38%,
+    rgba(51, 9, 39, 0) 70%
+  );
+  mix-blend-mode: screen;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 0;
+}
+.hero-spotlight.is-active {
+  opacity: 1;
+  will-change: transform;
+}
+
+/* ---------- Aurora : blobs lumineux flous derrière la photo ---------- */
+.aurora {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(42px);
+  pointer-events: none;
+  z-index: 0;
+  will-change: transform;
+}
+.aurora-bordeaux {
+  width: 70%;
+  height: 70%;
+  left: -18%;
+  top: -22%;
+  background: var(--c-bordeaux);
+  opacity: 0.75;
+  animation: aurora-1 14s ease-in-out infinite alternate;
+}
+.aurora-teal {
+  width: 58%;
+  height: 58%;
+  left: 22%;
+  top: 18%;
+  background: var(--c-teal);
+  opacity: 0.5;
+  animation: aurora-2 11s ease-in-out infinite alternate;
+}
+.aurora-olive {
+  width: 66%;
+  height: 66%;
+  right: -22%;
+  bottom: -26%;
+  background: var(--c-olive);
+  opacity: 0.7;
+  animation: aurora-3 16s ease-in-out infinite alternate;
+}
+@keyframes aurora-1 {
+  to {
+    transform: translate3d(28%, 22%, 0) scale(1.15);
+  }
+}
+@keyframes aurora-2 {
+  from {
+    transform: translate3d(-22%, -12%, 0) scale(1);
+  }
+  to {
+    transform: translate3d(22%, 18%, 0) scale(1.25);
+  }
+}
+@keyframes aurora-3 {
+  to {
+    transform: translate3d(-30%, -26%, 0) scale(1.1);
+  }
+}
+
+/* Reflet lumineux qui balaie le dégradé */
+.sheen {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 38%,
+    rgba(255, 255, 255, 0.13) 50%,
+    transparent 62%
+  );
+  transform: translate3d(-100%, 0, 0);
+  animation: sheen 8s ease-in-out 1.8s infinite;
+}
+@keyframes sheen {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  35%,
+  100% {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+/* ---------- Bandeau d'icônes ---------- */
+.gradientShadow {
+  position: relative;
+}
+.gradientShadow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: 0 0 40px 6px rgba(63, 208, 191, 0.3),
+    0 0 90px 10px rgba(126, 117, 36, 0.28);
+  opacity: 0;
+  animation: glow-pulse 6s ease-in-out infinite;
+}
+@keyframes glow-pulse {
+  50% {
+    opacity: 1;
+  }
+}
+
+.aurora-bar {
+  position: absolute;
+  top: -110%;
+  height: 320%;
+  width: 34%;
+  border-radius: 50%;
+  filter: blur(38px);
+  pointer-events: none;
+  z-index: 0;
+  will-change: transform;
+}
+.aurora-bar-1 {
+  left: -12%;
+  background: var(--c-bordeaux);
+  opacity: 0.6;
+  animation: bar-drift 19s ease-in-out infinite alternate;
+}
+.aurora-bar-2 {
+  left: 33%;
+  background: var(--c-teal);
+  opacity: 0.5;
+  animation: bar-drift 15s ease-in-out -5s infinite alternate-reverse;
+}
+.aurora-bar-3 {
+  right: -12%;
+  background: var(--c-olive);
+  opacity: 0.55;
+  animation: bar-drift 22s ease-in-out -9s infinite alternate;
+}
+@keyframes bar-drift {
+  from {
+    transform: translate3d(-18%, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(22%, 0, 0) scale(1.18);
+  }
+}
+.sheen-bar {
+  animation-duration: 10s;
+  animation-delay: 2.6s;
+}
+
+.skill-icon {
+  display: inline-flex;
+  animation: float 4.5s ease-in-out infinite;
+  animation-delay: calc(var(--i, 0) * -0.9s);
+}
+.skill-icon img {
+  transition: transform 0.45s var(--ease-out), filter 0.45s ease;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -7px, 0);
+  }
+}
+
+/* ---------- Halos de fond qui dérivent (desktop uniquement) ---------- */
+@media (min-width: 1025px) {
+  .blob-drift {
+    animation: blob-drift 20s ease-in-out infinite alternate;
+  }
+  .blob-drift:nth-of-type(2n) {
+    animation-duration: 26s;
+    animation-direction: alternate-reverse;
+  }
+  .blob-drift:nth-of-type(3n) {
+    animation-duration: 31s;
+    animation-delay: -8s;
+  }
+}
+@keyframes blob-drift {
+  from {
+    transform: translate3d(-3%, 2%, 0) scale(1);
+  }
+  to {
+    transform: translate3d(4%, -4%, 0) scale(1.08);
+  }
+}
+
+/* ---------- Apparition au scroll ---------- */
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 40px, 0);
+  transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- Bouton (Contact / Voir tous mes projets) ---------- */
+.cbtn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 72px;
+  padding: 0;
+  border: 0;
+  background: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.cbtn-base,
+.cbtn-glow {
+  position: absolute;
+  border-radius: 9999px;
+  pointer-events: none;
+}
+.cbtn-base {
+  inset: 0;
+  overflow: hidden;
+  background-image: linear-gradient(
+    to bottom right,
+    #331d09 10%,
+    #3fd0bf 55%,
+    #7e7524 90%
+  );
+  transform-origin: top;
+  transition: transform 0.15s ease;
+}
+/* dégradé qui glisse au survol */
+.cbtn-base::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+    90deg,
+    #3fd0bf,
+    #7e7524,
+    #330927,
+    #3fd0bf,
+    #7e7524
+  );
+  background-size: 300% 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.cbtn-glow {
+  inset: 8px 6px 0;
+  background-image: linear-gradient(90deg, #330927, #3fd0bf, #7e7524);
+  filter: blur(18px);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.cbtn-face {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  border-radius: 9999px;
+  background-color: var(--c-bg);
+  font-size: 1.25rem;
+  line-height: 2.5;
+  font-weight: 300;
+  transition: transform 0.45s var(--ease-out);
+}
+@media (hover: hover) {
+  .cbtn:not([aria-disabled="true"]):hover .cbtn-face {
+    transform: translate3d(0, -3px, 0);
+  }
+  .cbtn:not([aria-disabled="true"]):hover .cbtn-glow {
+    opacity: 0.8;
+  }
+  .cbtn:not([aria-disabled="true"]):hover .cbtn-base::after {
+    opacity: 1;
+    animation: gradient-slide 3s linear infinite;
+  }
+}
+.cbtn:not([aria-disabled="true"]):focus-visible .cbtn-glow {
+  opacity: 0.8;
+}
+/* pression : la face recouvre le socle (comme l'effet de clic d'origine) */
+.cbtn:not([aria-disabled="true"]):active .cbtn-face {
+  transform: translate3d(0, 7px, 0);
+  transition-duration: 0.12s;
+}
+.cbtn:not([aria-disabled="true"]):active .cbtn-base {
+  transform: translate3d(0, 7px, 0) scaleY(0.9);
+}
+.cbtn[aria-disabled="true"] {
+  cursor: no-drop;
+}
+@keyframes gradient-slide {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+/* ---------- Cartes « Expérience » ---------- */
+.service-card {
+  transition: transform 0.5s var(--ease-out), background-color 0.5s ease,
+    box-shadow 0.5s ease;
+}
+.service-tag {
+  transition: border-color 0.5s ease;
+}
+@media (hover: hover) {
+  .service-card:hover {
+    transform: translate3d(0, -8px, 0);
+    background-color: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 24px 60px -24px rgba(63, 208, 191, 0.45),
+      0 0 70px -30px rgba(126, 117, 36, 0.55);
+  }
+  .service-card:hover .service-ring {
+    animation: spin 3s linear infinite;
+  }
+  .service-card:hover .service-tag {
+    border-color: rgba(63, 208, 191, 0.85);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------- Cartes projets : tilt 3D + halo ---------- */
+.tilt-card {
+  position: relative;
+  transition: transform 0.6s var(--ease-out), box-shadow 0.6s ease,
+    background-color 0.6s ease;
+}
+.tilt-card.is-tilting {
+  transition: transform 0.15s linear, box-shadow 0.6s ease,
+    background-color 0.6s ease;
+}
+.tilt-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(
+    600px circle at var(--mx, 50%) var(--my, 50%),
+    rgba(63, 208, 191, 0.13),
+    transparent 45%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.project-img {
+  transition: transform 0.6s var(--ease-out);
+}
+@media (hover: hover) {
+  .project-link:hover .tilt-card {
+    transform: perspective(1100px) rotateX(var(--rx, 0deg))
+      rotateY(var(--ry, 0deg)) translate3d(0, -8px, 0);
+    background-color: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 30px 80px -30px rgba(63, 208, 191, 0.45),
+      0 0 90px -30px rgba(126, 117, 36, 0.5),
+      0 0 120px -40px rgba(51, 9, 39, 0.9);
+  }
+  .project-link:hover .tilt-card::before {
+    opacity: 1;
+  }
+  .project-link:hover .project-img {
+    transform: scale(1.02);
+  }
+}
+.project-link:focus-visible .tilt-card {
+  transform: translate3d(0, -8px, 0);
+  box-shadow: 0 30px 80px -30px rgba(63, 208, 191, 0.45);
+}
+
+/* ---------- Témoignages ---------- */
+.quote-badge::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  border: 2px solid var(--c-teal);
+  pointer-events: none;
+  animation: ring-pulse 2.8s ease-out infinite;
+}
+@keyframes ring-pulse {
+  from {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  to {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+.review-swap {
+  animation: fade-up 0.8s var(--ease-out) both;
+  animation-delay: var(--d, 0ms);
+}
+
+/* ---------- Footer ---------- */
+.email-pill p,
+.social-icon {
+  transition: transform 0.5s var(--ease-out), box-shadow 0.5s ease;
+}
+.social-link {
+  display: block;
+}
+@media (hover: hover) {
+  .email-pill:hover p {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -6px rgba(63, 208, 191, 0.55),
+      0 0 70px -10px rgba(126, 117, 36, 0.5);
+  }
+  .social-link:hover .social-icon {
+    transform: scale(1.25);
+    box-shadow: 0 0 22px -2px rgba(63, 208, 191, 0.7);
+  }
+  .skill-icon:hover img {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.7))
+      drop-shadow(0 0 20px rgba(63, 208, 191, 0.9));
+  }
+}
+
+/* ---------- Accessibilité : réduire les animations ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .hero-spotlight {
+    display: none;
   }
 }

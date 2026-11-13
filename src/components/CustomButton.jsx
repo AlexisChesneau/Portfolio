@@ -1,24 +1,45 @@
-import { useState } from "react";
+/**
+ * Bouton pilule : face sombre bordée de blanc posée sur un socle en dégradé
+ * (bordeaux → turquoise → olive) qui dépasse de 7px en bas.
+ * - survol : la face s'élève, le dégradé glisse et un halo apparaît
+ * - clic : la face s'enfonce et recouvre le socle (comme l'ancien effet)
+ * Avec `href`, rend un vrai lien <a> (plus de <button> imbriqué dans un <a>).
+ */
+export default function CustomButton({
+  string,
+  widthDiv,
+  width,
+  custom = "",
+  href,
+  disabled = false,
+  ...rest
+}) {
+  const content = (
+    <>
+      <span aria-hidden="true" className="cbtn-glow" />
+      <span aria-hidden="true" className="cbtn-base" />
+      <span className={`cbtn-face ${width} ${custom}`}>{string}</span>
+    </>
+  );
 
-export default function CustomButton({ string, widthDiv, width, custom }) {
-  const [isClicked, setIsClicked] = useState(false);
-  setTimeout(() => {
-    setIsClicked(false);
-  }, [100]);
+  const classes = `cbtn ${widthDiv}`;
+
+  if (href) {
+    return (
+      <a href={href} className={classes} {...rest}>
+        {content}
+      </a>
+    );
+  }
+
   return (
-    <div className="flex justify-end">
-      <div
-        className={`${
-          isClicked ? "mt-[7px]" : "h-[72px]"
-        } ${widthDiv} rounded-full bg-gradient-to-br from-[#331D09] from-10% via-[#3FD0BF] via-55% to-[#7E7524] to-90% transform transition-transform duration-500 ease-in-out`}
-      >
-        <button
-          className={`${width} h-[65px] border-2 rounded-full text-lg bg-[#15041D] ${custom}`}
-          onClick={() => setIsClicked(true)}
-        >
-          {string}
-        </button>
-      </div>
-    </div>
+    <button
+      type="button"
+      className={classes}
+      aria-disabled={disabled || undefined}
+      {...rest}
+    >
+      {content}
+    </button>
   );
 }
