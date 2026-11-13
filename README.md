@@ -34,6 +34,6 @@ J’ai suivi une formation à la Wild Code School où j’ai appris à développ
 Si vous avez des questions, ou si vous souhaitez collaborer sur un projet, n'hésitez pas à me contacter !
 
 - 📧 Email : [chesneaualexis64@gmail.com](mailto:chesneaualexis64@gmail.com)
-- 🔗 LinkedIn : [Alexis Chesneau](www.linkedin.com/in/alexis-chesneau-0951b4243)
+- 🔗 LinkedIn : [Alexis Chesneau](https://www.linkedin.com/in/alexis-chesneau-0951b4243)
 
 Merci d'avoir visité mon portfolio, et à bientôt !

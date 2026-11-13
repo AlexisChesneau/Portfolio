@@ -23,6 +23,9 @@ export default function Reviews() {
           développement web. Lisez les témoignages de personnes totalement
           ordinaires.
         </p>
+        <p className="text-sm opacity-70 pt-4 text-center">
+          (Témoignages humoristiques et fictifs.)
+        </p>
         <div
           id="reviewsCard"
           className="w-[81.25rem] h-[22.2rem] flex flex-col justify-between items-center bg-white bg-opacity-[4%] rounded-3xl my-[5rem] p-[2.8rem]"

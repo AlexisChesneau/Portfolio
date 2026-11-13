@@ -34,7 +34,8 @@ export default function Projet() {
         DU CONCEPT À LA RÉALISATION NUMÉRIQUE
       </h2>
       {myProjects.map((project, idx) => (
-        <a href={project.lien} target="_blank">
+        <a href={project.lien} target="_blank"
+            rel="noopener noreferrer">
           <div
             id="projetCard"
             key={idx}

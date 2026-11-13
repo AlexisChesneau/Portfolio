@@ -35,6 +35,7 @@ export default function Profil() {
           <a
             href="https://www.linkedin.com/in/alexis-chesneau-0951b4243/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <CustomButton
               string={"Contact"}
@@ -47,7 +48,7 @@ export default function Profil() {
           <img
             className="absolute z-20 h-[700px] max-[1280px]:h-[620px]"
             src="images/pictureProfil.png"
-            alt=""
+            alt="Photo d'Alexis Chesneau"
           />
           <div className="h-[541px] w-[634px] bg-gradient-to-br from-[#330927] from-10% via-[#3FD0BF] via-55% to-[#7E7524] to-90% opacity-90 z-10 max-[1280px]:h-[500px] max-[1280px]:w-[540px]"></div>
         </div>

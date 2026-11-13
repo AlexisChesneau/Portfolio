@@ -27,7 +27,8 @@ export default function Footer() {
           </div>
           <div className="flex gap-14 max-[1024px]:gap-4 max-[525px]:gap-8">
             {reseaux.map((reseau, idx) => (
-              <a href={reseau.lien} target="_blank">
+              <a href={reseau.lien} target="_blank"
+            rel="noopener noreferrer">
                 <div
                   key={idx}
                   className="flex items-center justify-center border-2 p-2 rounded-full w-[50px] h-[50px] max-[720px]:h-[40px] max-[720px]:w-[40px] transform transition-transform duration-500 ease-in-out hover:scale-125"

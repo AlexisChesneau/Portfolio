@@ -9,11 +9,6 @@
     url("../public/font/Quicksand-Regular.ttf") format("opentype");
 }
 
-@font-face {
-  font-family: "Rugen";
-  src: local("Rugen"), url("../public/font/Rugen.otf") format("opentype");
-}
-
 ::-webkit-scrollbar {
   width: 12px;
 }
